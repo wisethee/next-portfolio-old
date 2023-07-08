@@ -1,5 +1,5 @@
 const Project = () => {
-  return <h1>Project Component.</h1>;
+  return <main>Project Component.</main>;
 };
 
 export default Project;
