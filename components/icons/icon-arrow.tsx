@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { transform } from "typescript";
 
 const IconArrow = ({
   stroke,
@@ -27,9 +26,12 @@ const IconArrow = ({
         rest: { fill: fill, scale: 1, opacity: 1 },
         hover: {
           fill: fillOnHover,
-          scale: 0,
-          opacity: 0,
-          transition: { duration: 0.3 },
+          scale: 4,
+          opacity: [null, 0.12, 0],
+          transition: {
+            duration: 0.5,
+            ease: [0, 0.71, 0.2, 1.01],
+          },
         },
       }}
     />
@@ -42,11 +44,11 @@ const IconArrow = ({
         rest: { stroke: stroke, scale: 0.25, opacity: 0 },
         hover: {
           stroke: strokeOnHover,
-          scale: 1,
+          scale: [null, 1.2, 1],
           opacity: 1,
           transition: {
-            duration: 0.1,
-            delay: 0.3,
+            duration: 0.3,
+            delay: 0.2,
             ease: [0, 0.71, 0.2, 1.01],
           },
         },

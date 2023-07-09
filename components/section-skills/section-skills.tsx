@@ -1,3 +1,5 @@
+import Button from "../button/button";
+
 const SectionSkills = () => {
   return (
     <div className="grid grid-cols-12 grid-rows-1 gap-4 py-24">
@@ -12,9 +14,7 @@ const SectionSkills = () => {
             exceeds expectations.
           </p>
         </div>
-        <button className="text-label-large uppercase rounded-full bg-black text-white px-8 py-4">
-          Explore my work
-        </button>
+        <Button labelOrder="first">Explore my work</Button>
       </div>
       <div className="col-span-5 col-start-8 row-start-1"></div>
       <div className="col-start-7 row-start-1"></div>
