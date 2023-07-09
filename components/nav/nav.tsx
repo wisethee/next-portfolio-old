@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Logo from "@/components/icons/logo";
 import ArrowRight from "@/components/icons/arrow-right";
 
@@ -17,8 +20,10 @@ const Nav = () => {
       </div>
 
       <div className="flex flex-grow basis-0 justify-end items-center">
-        <span className="text-label-large uppercase">Let&apos;s talk</span>
-        <ArrowRight />
+        <motion.button className="inline-flex items-center gap-2">
+          <span className="text-label-large uppercase">Let&apos;s talk</span>
+          <ArrowRight />
+        </motion.button>
       </div>
     </nav>
   );
