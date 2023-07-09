@@ -1,4 +1,13 @@
+"use client";
+
+import { useState } from "react";
+import { motion } from "framer-motion";
+
+import IconArrow from "../icons/icon-arrow";
+
 const Hero = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <div className="grid grid-cols-12 gap-x-6 h-hero content-center h-screen">
       <div className="col-span-2 row-span-2"></div>
@@ -15,9 +24,21 @@ const Hero = () => {
           </p>
         </div>
 
-        <button className="text-label-large uppercase rounded-full bg-black text-white px-8 py-4">
-          Find out more about me
-        </button>
+        <motion.button
+          className="inline-flex items-center gap-2 text-label-large uppercase rounded-full bg-black text-white px-8 h-14"
+          initial={false}
+          animate={isHovered ? "hover" : "rest"}
+          onMouseEnter={() => setIsHovered(!isHovered)}
+          onMouseLeave={() => setIsHovered(!isHovered)}
+        >
+          <IconArrow
+            stroke="#000000"
+            strokeOnHover="#ffffff"
+            fill="#ffffff"
+            fillOnHover="#000000"
+          />
+          <span>Find out more about me</span>
+        </motion.button>
       </div>
       <div className="col-span-3 row-span-2 col-start-8"></div>
       <div className="col-span-2 row-span-2 col-start-11"></div>
