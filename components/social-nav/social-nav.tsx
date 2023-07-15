@@ -1,6 +1,6 @@
 const SocialNav = () => {
   return (
-    <div className="absolute flex items-center h-24 w-full px-4 md:px-8 lg:px-16 xl:px-24 bottom-24">
+    <div className="absolute flex items-center h-24 w-full px-4 md:px-8 lg:px-16 xl:px-24 bottom-0">
       <div>
         <ul className="relative flex items-center gap-x-6">
           <li className="text-label-medium uppercase">GitHub</li>

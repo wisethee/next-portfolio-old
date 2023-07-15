@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 type LabelOrder = "first" | "last";
@@ -9,13 +9,13 @@ import IconArrow from "../icons/icon-arrow";
 
 const buttonVariants = {
   rest: {
-    // border: "2px solid #000000",
+    // border: "4px solid #000000",
     // backgroundColor: "#000000",
     // color: "#ffffff",
   },
   hover: {
     // backgroundColor: "#ffffff",
-    // border: "2px solid #000000",
+    // border: "4px solid #FFEBCC",
     // color: "#000000",
     // transition: {
     //   duration: 0.3,
